@@ -1,0 +1,10 @@
+.main-body {
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+    border: 1px solid #d1c2a5;
+    border-radius: 7px;
+    padding: 35px;
+    background-color: #f2ead6;
+    min-width: 200px;
+}

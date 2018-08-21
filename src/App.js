@@ -3,8 +3,8 @@ import { Provider } from 'react-redux';
 
 import './App.css';
 
-import configureStore from './my_register/redux/store';
-import MyRegister from './my_register/MyRegister';
+import configureStore from './mints/redux/store';
+import Mints from './mints/Mints';
 
 const store = configureStore();
 
@@ -12,7 +12,7 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <MyRegister />
+        <Mints />
       </Provider>
     );
   }

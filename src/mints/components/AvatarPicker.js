@@ -1,6 +1,7 @@
 import React from 'react';
 import AvatarEditor from 'react-avatar-editor';
 import PropTypes from 'prop-types';
+import { Button } from 'react-bootstrap';
 
 import ErrorMessages from './ErrorMessages'
 
@@ -47,8 +48,11 @@ export default class AvatarPicker extends React.Component {
     setEditorRef = editor => this.editor = editor
 
     renderFilePicker = () => (
-        <div>
-            <label>Avator:</label> 
+        <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+            }}>
+            <label style={{ marginRight: 8 }} >Avator:</label> 
             <input type='file' name='file' onChange={({ target: {files} }) => this.handleImageSelected(files ? files[0] : null)} /> <br/>
         </div>
     )
@@ -58,18 +62,22 @@ export default class AvatarPicker extends React.Component {
     )
 
     renderAvatarEditor = () => (
-        <div>
+        <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center'
+            }}>
             <AvatarEditor
                 ref={this.setEditorRef}
                 image={this.state.imageFile}
-                width={250}
-                height={250}
+                width={150}
+                height={150}
                 border={50}
                 scale={1.2}
                 color={[255, 255, 255, 0.6]} // RGBA
                 rotate={0}
                 />
-                <button onClick={this.handleDone} >Done</button>
+                <Button style={{ marginTop: 13, width: '35%' }} bsStyle='primary' onClick={this.handleDone} >Done</Button>
         </div>
     )
 
@@ -77,8 +85,9 @@ export default class AvatarPicker extends React.Component {
         <img 
             src={URL.createObjectURL(this.state.imageBlob)} 
             style={{
-                width: 250,
-                height: 250
+                width: 150,
+                height: 150,
+                margin: 'auto'
             }}
             alt='Failed to load'
             />
@@ -86,7 +95,11 @@ export default class AvatarPicker extends React.Component {
 
     render() {
         return (
-            <div>
+            <div style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center'
+                }} >
                 {!this.state.hasDoneEdit && this.renderFilePicker()}
                 {this.state.imagePickerErrorMessage && this.renderImagePickerErrorMessage()}
                 {this.state.imageFile && !this.state.hasDoneEdit && this.renderAvatarEditor()}
