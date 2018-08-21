@@ -5,6 +5,7 @@
 - Done register style
 - Done responsive support
 - Changed app name to Mints
+- Added todo- host to firebase
 
 # August 20, 2018
 - Done basic ui
