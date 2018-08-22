@@ -2,6 +2,7 @@
 - Fixed reigster succeed without login
 - Changed sumbit button text from Submit to Register to make it more meaningful
 - Added unit tests
+- Added readme with how to run and how to test
 
 # August 21, 2018
 - Done nav bar
