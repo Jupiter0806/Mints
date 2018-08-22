@@ -18,10 +18,10 @@ export class MyRegister extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            email: '123@gmail.com',
-            fullname: '123',
-            password: '123456',
-            repassword: '123456',
+            email: '',
+            fullname: '',
+            password: '',
+            repassword: '',
             avatar: null,
 
             errorMessages: null, // a list

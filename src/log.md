@@ -3,6 +3,9 @@
 - Changed sumbit button text from Submit to Register to make it more meaningful
 - Added unit tests
 - Added readme with how to run and how to test
+- Changed favicon.ico
+- Removed default testing values in myRegister
+- Deploy to firebase hosting
 
 # August 21, 2018
 - Done nav bar
