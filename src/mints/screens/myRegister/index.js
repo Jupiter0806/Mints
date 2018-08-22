@@ -106,7 +106,7 @@ class MyRegister extends React.Component {
                 <div>{((this.state.errorMessages && this.state.errorMessages.length > 0) || this.props.signUpErrorMessage) && this.renderErrorMessasge()}</div>
             ]}
             buttons = {[
-                <Button style={{ width: '35%' }} bsStyle='primary' onClick={this.handleClick} disabled={this.props.isSignUp} >Submit</Button>
+                <Button style={{ width: '35%' }} bsStyle='primary' onClick={this.handleClick} disabled={this.props.isSignUp} >Register</Button>
 
             ]}
             />

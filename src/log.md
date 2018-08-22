@@ -1,3 +1,7 @@
+# August 22, 2018
+- Fixed reigster succeed without login
+- Changed sumbit button text from Submit to Register to make it more meaningful
+
 # August 21, 2018
 - Done nav bar
 - Done Primary and secondary page

@@ -22,7 +22,7 @@ export default function user (
             return Object.assign({}, state, {
                 isSignUp: false,
                 signUpErrorMessage: '',
-                data: Object.assign({}, state.data.parseServerResponse(action.response))
+                data: Object.assign({}, state.data.parseServerResponse(action.response).loggedIn())
             });
 
         case USER_ACTIONS.SIGN_UP_FAIL:
