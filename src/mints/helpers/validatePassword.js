@@ -1,9 +1,5 @@
 export default (password) => {
     if (!password) {
-        return 'Password cannot be null'
-    }
-
-    if (password.length === 0) {
         return 'Password cannot be empty'
     }
 

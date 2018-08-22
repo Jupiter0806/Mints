@@ -5,3 +5,4 @@
 [x] check if 3 diff ui component
 [x] add checkbox input in the signed up page to review it
 [] host to firebase
+[] write how to setup project

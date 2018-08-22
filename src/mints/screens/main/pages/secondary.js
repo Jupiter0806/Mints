@@ -7,7 +7,7 @@ import { Navbar, RadioInput } from '../../../components';
 
 import '../main.css';
 
-class SecondaryScreen extends React.Component {
+export class Secondary extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -65,4 +65,4 @@ export default compose(
         isSignUp: user.isSignUp,
         signUpErrorMessage: user.signUpErrorMessage
     }))
-)(SecondaryScreen);
+)(Secondary);

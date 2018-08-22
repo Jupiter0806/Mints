@@ -14,7 +14,7 @@ import validatePassword from '../../helpers/validatePassword';
 import { ErrorMessages, AvatarPicker, Form, TextInput, EmailInput, PasswordInput } from '../../components';
 import { USER_ACTIONS } from '../../redux/actions';
 
-class MyRegister extends React.Component {
+export class MyRegister extends React.Component {
     constructor(props) {
         super(props);
         this.state = {

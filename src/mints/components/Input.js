@@ -1,5 +1,7 @@
 import React from 'react';
 
+import isFunction from '../helpers/isFunction'
+
 export default ({ label, onTextChange, containsError, type }) => (
     <div style={{
             display: 'flex',
@@ -13,7 +15,7 @@ export default ({ label, onTextChange, containsError, type }) => (
                     : { border: '1px solid #947a6d', borderRadius: 2 }
             }
             type={type} 
-            onChange={({ target: { value } }) => onTextChange(value)} 
+            onChange={({ target: { value } }) => onTextChange && isFunction(onTextChange) && onTextChange(value)} 
             /> 
         <br/>
     </div>

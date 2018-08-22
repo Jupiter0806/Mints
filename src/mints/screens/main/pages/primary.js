@@ -7,7 +7,7 @@ import { Navbar } from '../../../components';
 
 import '../main.css';
 
-class MainScreen extends React.Component {
+export class Primary extends React.Component {
     
     render() {
         return (
@@ -42,4 +42,4 @@ export default compose(
         isSignUp: user.isSignUp,
         signUpErrorMessage: user.signUpErrorMessage
     }))
-)(MainScreen);
+)(Primary);
